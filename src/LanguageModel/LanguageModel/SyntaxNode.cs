@@ -1,5 +1,4 @@
-﻿using ImmutableObjectGraph;
-using ImmutableObjectGraph.CodeGeneration;
+using ImmutableObjectGraph.Generation;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
