@@ -5,10 +5,7 @@ namespace Microsoft.VisualStudio.Debugger.Lua
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using Microsoft.VisualStudio.ProjectSystem;
-    using Microsoft.VisualStudio.ProjectSystem.Utilities.DebuggerProviders;
-    using Microsoft.VisualStudio.ProjectSystem.VS.Debuggers;
+    using Microsoft.VisualStudio.ProjectSystem.VS.Debug;
 
     internal static class ExtensionMethods
     {

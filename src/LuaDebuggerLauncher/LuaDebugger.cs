@@ -5,17 +5,10 @@ namespace Microsoft.VisualStudio.Debugger.Lua
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Composition;
-    using System.Diagnostics;
-    using System.IO;
-    using System.Linq;
-    using System.Text;
     using System.Threading.Tasks;
     using Microsoft.VisualStudio.ProjectSystem;
-    using Microsoft.VisualStudio.ProjectSystem.Debuggers;
-    using Microsoft.VisualStudio.ProjectSystem.Utilities;
-    using Microsoft.VisualStudio.ProjectSystem.Utilities.DebuggerProviders;
-    using Microsoft.VisualStudio.ProjectSystem.VS.Debuggers;
-    using Microsoft.VisualStudio.Shell;
+    using Microsoft.VisualStudio.ProjectSystem.Debug;
+    using Microsoft.VisualStudio.ProjectSystem.VS.Debug;
 
     /// <summary>
     /// A Visual C++ extension that launches a custom debugger.

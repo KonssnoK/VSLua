@@ -5,7 +5,6 @@ namespace Microsoft.VisualStudio.Debugger.Lua.Rules
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.ProjectSystem;
     using Microsoft.VisualStudio.ProjectSystem.Properties;
-    using Microsoft.VisualStudio.ProjectSystem.Utilities;
 
     /// <summary>
     /// Provides rule-based property access.
