@@ -1,24 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
-  <Identifier Id="Microsoft.VisualStudioToolsforLua">
-    <Name>Microsoft Visual Studio Tools for Lua</Name>
-    <Author>Microsoft</Author>
-    <Version>1.0</Version>
-    <Description xml:space="preserve">Microsoft Visual Studio Tools for Lua</Description>
-    <Locale>1033</Locale>
-    <SupportedProducts>
-      <VisualStudio Version="14.0">
-        <Edition>Community</Edition>
-        <Edition>Enterprise</Edition>
-      </VisualStudio>
-    </SupportedProducts>
-    <SupportedFrameworkRuntimeEdition MinVersion="4.5.1" MaxVersion="4.5.2" />
-  </Identifier>
-  <References />
-  <Content>
-    <MefComponent>|%CurrentProject%|</MefComponent>
-    <MefComponent>|LuaLanguageServicePackage|</MefComponent>
-    <Assembly AssemblyName="LanguageService">|LanguageService|</Assembly>
-    <VsPackage>LuaLanguageServiceThemes.pkgdef</VsPackage>
-  </Content>
-</Vsix>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Microsoft.VisualStudioToolsforLua" Version="1.0" Language="en-US" Publisher="Lorenzo Consolaro" />
+    <DisplayName>Microsoft Visual Studio Tools for Lua</DisplayName>
+    <Description>Microsoft Visual Studio Tools for Lua</Description>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 16.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="LuaLanguageServicePackage" Path="|LuaLanguageServicePackage|" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="LanguageService" Path="|LanguageService|" AssemblyName="|LanguageService;AssemblyName|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="LuaLanguageServiceThemes.pkgdef" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>
