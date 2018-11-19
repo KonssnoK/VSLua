@@ -53,7 +53,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Build" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -87,7 +86,7 @@
       <Generator>MSBuild:Compile</Generator>
     </XamlPropertyRule>
     <!-- Fix this path to use $(MSBuildProgramFiles32).  New Project expansion breaks this so it has to be manually fixed. -->
-    <XamlPropertyRule Include="C:\Program Files %28x86%29\MSBuild\Microsoft.Cpp\v4.0\V140\1033\general.xml">
+    <XamlPropertyRule Include="C:\Programmi86\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\1033\general.xml">
       <Link>StandardRules\general.xml</Link>
     </XamlPropertyRule>
   </ItemGroup>
